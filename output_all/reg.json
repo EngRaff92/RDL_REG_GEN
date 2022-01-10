@@ -1,0 +1,4546 @@
+{
+    "type": "addrmap",
+    "absolute_adress": "0x0",
+    "inst_name": "apb_addr_map",
+    "children": [
+        {
+            "type": "regfile",
+            "absolute_adress": "0x0",
+            "inst_name": "apb_rif",
+            "children": [
+                {
+                    "type": "reg",
+                    "inst_name": "data1",
+                    "address_offset": "0x0",
+                    "direction": "output",
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dt",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ],
+                    "global_reset_value": "0x0",
+                    "sw_write_mask": "0xffffffff",
+                    "sw_read_mask": "0xffffffff",
+                    "hw_write_mask": "0x0",
+                    "hw_read_mask": "0xffffffff"
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "data2",
+                    "address_offset": "0x4",
+                    "direction": "output",
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dt",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ],
+                    "global_reset_value": "0x0",
+                    "sw_write_mask": "0xffffffff",
+                    "sw_read_mask": "0xffffffff",
+                    "hw_write_mask": "0x0",
+                    "hw_read_mask": "0xffffffff"
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "data3",
+                    "address_offset": "0x8",
+                    "direction": "output",
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dt",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ],
+                    "global_reset_value": "0x0",
+                    "sw_write_mask": "0xffffffff",
+                    "sw_read_mask": "0xffffffff",
+                    "hw_write_mask": "0x0",
+                    "hw_read_mask": "0xffffffff"
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "write_enable",
+                    "address_offset": "0xc",
+                    "direction": "output",
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "data1_wren",
+                            "lsb": 0,
+                            "msb": 0,
+                            "reset": 0,
+                            "sw_access": "w",
+                            "hw_access": "r"
+                        },
+                        {
+                            "type": "field",
+                            "inst_name": "data2_wren",
+                            "lsb": 1,
+                            "msb": 1,
+                            "reset": 0,
+                            "sw_access": "w",
+                            "hw_access": "r"
+                        },
+                        {
+                            "type": "field",
+                            "inst_name": "data3_wren",
+                            "lsb": 2,
+                            "msb": 2,
+                            "reset": 0,
+                            "sw_access": "w",
+                            "hw_access": "r"
+                        }
+                    ],
+                    "global_reset_value": "0x0",
+                    "sw_write_mask": "0x7",
+                    "sw_read_mask": "0x0",
+                    "hw_write_mask": "0x0",
+                    "hw_read_mask": "0x7"
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "data_status_1",
+                    "address_offset": "0x10",
+                    "direction": "input",
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "status",
+                            "lsb": 0,
+                            "msb": 0,
+                            "reset": 0,
+                            "sw_access": "r",
+                            "hw_access": "w"
+                        }
+                    ],
+                    "global_reset_value": "0x0",
+                    "sw_write_mask": "0x0",
+                    "sw_read_mask": "0x1",
+                    "hw_write_mask": "0x1",
+                    "hw_read_mask": "0x0"
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "data_status_2",
+                    "address_offset": "0x14",
+                    "direction": "input",
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "status",
+                            "lsb": 0,
+                            "msb": 0,
+                            "reset": 0,
+                            "sw_access": "r",
+                            "hw_access": "w"
+                        }
+                    ],
+                    "global_reset_value": "0x0",
+                    "sw_write_mask": "0x0",
+                    "sw_read_mask": "0x1",
+                    "hw_write_mask": "0x1",
+                    "hw_read_mask": "0x0"
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "data_status_3",
+                    "address_offset": "0x18",
+                    "direction": "input",
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "status",
+                            "lsb": 0,
+                            "msb": 0,
+                            "reset": 0,
+                            "sw_access": "r",
+                            "hw_access": "w"
+                        }
+                    ],
+                    "global_reset_value": "0x0",
+                    "sw_write_mask": "0x0",
+                    "sw_read_mask": "0x1",
+                    "hw_write_mask": "0x1",
+                    "hw_read_mask": "0x0"
+                }
+            ]
+        },
+        {
+            "type": "memory",
+            "memory_adress_start": "0x100",
+            "inst_name": "apb_mem",
+            "children": [
+                {
+                    "type": "reg",
+                    "inst_name": "r1_0",
+                    "address_offset": "0x100",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_1",
+                    "address_offset": "0x104",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_2",
+                    "address_offset": "0x108",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_3",
+                    "address_offset": "0x10c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_4",
+                    "address_offset": "0x110",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_5",
+                    "address_offset": "0x114",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_6",
+                    "address_offset": "0x118",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_7",
+                    "address_offset": "0x11c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_8",
+                    "address_offset": "0x120",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_9",
+                    "address_offset": "0x124",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_10",
+                    "address_offset": "0x128",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_11",
+                    "address_offset": "0x12c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_12",
+                    "address_offset": "0x130",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_13",
+                    "address_offset": "0x134",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_14",
+                    "address_offset": "0x138",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_15",
+                    "address_offset": "0x13c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_16",
+                    "address_offset": "0x140",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_17",
+                    "address_offset": "0x144",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_18",
+                    "address_offset": "0x148",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_19",
+                    "address_offset": "0x14c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_20",
+                    "address_offset": "0x150",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_21",
+                    "address_offset": "0x154",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_22",
+                    "address_offset": "0x158",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_23",
+                    "address_offset": "0x15c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_24",
+                    "address_offset": "0x160",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_25",
+                    "address_offset": "0x164",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_26",
+                    "address_offset": "0x168",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_27",
+                    "address_offset": "0x16c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_28",
+                    "address_offset": "0x170",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_29",
+                    "address_offset": "0x174",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_30",
+                    "address_offset": "0x178",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_31",
+                    "address_offset": "0x17c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_32",
+                    "address_offset": "0x180",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_33",
+                    "address_offset": "0x184",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_34",
+                    "address_offset": "0x188",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_35",
+                    "address_offset": "0x18c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_36",
+                    "address_offset": "0x190",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_37",
+                    "address_offset": "0x194",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_38",
+                    "address_offset": "0x198",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_39",
+                    "address_offset": "0x19c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_40",
+                    "address_offset": "0x1a0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_41",
+                    "address_offset": "0x1a4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_42",
+                    "address_offset": "0x1a8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_43",
+                    "address_offset": "0x1ac",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_44",
+                    "address_offset": "0x1b0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_45",
+                    "address_offset": "0x1b4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_46",
+                    "address_offset": "0x1b8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_47",
+                    "address_offset": "0x1bc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_48",
+                    "address_offset": "0x1c0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_49",
+                    "address_offset": "0x1c4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_50",
+                    "address_offset": "0x1c8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_51",
+                    "address_offset": "0x1cc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_52",
+                    "address_offset": "0x1d0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_53",
+                    "address_offset": "0x1d4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_54",
+                    "address_offset": "0x1d8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_55",
+                    "address_offset": "0x1dc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_56",
+                    "address_offset": "0x1e0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_57",
+                    "address_offset": "0x1e4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_58",
+                    "address_offset": "0x1e8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_59",
+                    "address_offset": "0x1ec",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_60",
+                    "address_offset": "0x1f0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_61",
+                    "address_offset": "0x1f4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_62",
+                    "address_offset": "0x1f8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_63",
+                    "address_offset": "0x1fc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_64",
+                    "address_offset": "0x200",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_65",
+                    "address_offset": "0x204",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_66",
+                    "address_offset": "0x208",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_67",
+                    "address_offset": "0x20c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_68",
+                    "address_offset": "0x210",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_69",
+                    "address_offset": "0x214",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_70",
+                    "address_offset": "0x218",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_71",
+                    "address_offset": "0x21c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_72",
+                    "address_offset": "0x220",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_73",
+                    "address_offset": "0x224",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_74",
+                    "address_offset": "0x228",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_75",
+                    "address_offset": "0x22c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_76",
+                    "address_offset": "0x230",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_77",
+                    "address_offset": "0x234",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_78",
+                    "address_offset": "0x238",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_79",
+                    "address_offset": "0x23c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_80",
+                    "address_offset": "0x240",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_81",
+                    "address_offset": "0x244",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_82",
+                    "address_offset": "0x248",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_83",
+                    "address_offset": "0x24c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_84",
+                    "address_offset": "0x250",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_85",
+                    "address_offset": "0x254",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_86",
+                    "address_offset": "0x258",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_87",
+                    "address_offset": "0x25c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_88",
+                    "address_offset": "0x260",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_89",
+                    "address_offset": "0x264",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_90",
+                    "address_offset": "0x268",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_91",
+                    "address_offset": "0x26c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_92",
+                    "address_offset": "0x270",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_93",
+                    "address_offset": "0x274",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_94",
+                    "address_offset": "0x278",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_95",
+                    "address_offset": "0x27c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_96",
+                    "address_offset": "0x280",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_97",
+                    "address_offset": "0x284",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_98",
+                    "address_offset": "0x288",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_99",
+                    "address_offset": "0x28c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_100",
+                    "address_offset": "0x290",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_101",
+                    "address_offset": "0x294",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_102",
+                    "address_offset": "0x298",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_103",
+                    "address_offset": "0x29c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_104",
+                    "address_offset": "0x2a0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_105",
+                    "address_offset": "0x2a4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_106",
+                    "address_offset": "0x2a8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_107",
+                    "address_offset": "0x2ac",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_108",
+                    "address_offset": "0x2b0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_109",
+                    "address_offset": "0x2b4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_110",
+                    "address_offset": "0x2b8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_111",
+                    "address_offset": "0x2bc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_112",
+                    "address_offset": "0x2c0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_113",
+                    "address_offset": "0x2c4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_114",
+                    "address_offset": "0x2c8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_115",
+                    "address_offset": "0x2cc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_116",
+                    "address_offset": "0x2d0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_117",
+                    "address_offset": "0x2d4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_118",
+                    "address_offset": "0x2d8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_119",
+                    "address_offset": "0x2dc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_120",
+                    "address_offset": "0x2e0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_121",
+                    "address_offset": "0x2e4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_122",
+                    "address_offset": "0x2e8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_123",
+                    "address_offset": "0x2ec",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_124",
+                    "address_offset": "0x2f0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_125",
+                    "address_offset": "0x2f4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_126",
+                    "address_offset": "0x2f8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_127",
+                    "address_offset": "0x2fc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_128",
+                    "address_offset": "0x300",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_129",
+                    "address_offset": "0x304",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_130",
+                    "address_offset": "0x308",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_131",
+                    "address_offset": "0x30c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_132",
+                    "address_offset": "0x310",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_133",
+                    "address_offset": "0x314",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_134",
+                    "address_offset": "0x318",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_135",
+                    "address_offset": "0x31c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_136",
+                    "address_offset": "0x320",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_137",
+                    "address_offset": "0x324",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_138",
+                    "address_offset": "0x328",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_139",
+                    "address_offset": "0x32c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_140",
+                    "address_offset": "0x330",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_141",
+                    "address_offset": "0x334",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_142",
+                    "address_offset": "0x338",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_143",
+                    "address_offset": "0x33c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_144",
+                    "address_offset": "0x340",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_145",
+                    "address_offset": "0x344",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_146",
+                    "address_offset": "0x348",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_147",
+                    "address_offset": "0x34c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_148",
+                    "address_offset": "0x350",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_149",
+                    "address_offset": "0x354",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_150",
+                    "address_offset": "0x358",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_151",
+                    "address_offset": "0x35c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_152",
+                    "address_offset": "0x360",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_153",
+                    "address_offset": "0x364",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_154",
+                    "address_offset": "0x368",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_155",
+                    "address_offset": "0x36c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_156",
+                    "address_offset": "0x370",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_157",
+                    "address_offset": "0x374",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_158",
+                    "address_offset": "0x378",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_159",
+                    "address_offset": "0x37c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_160",
+                    "address_offset": "0x380",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_161",
+                    "address_offset": "0x384",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_162",
+                    "address_offset": "0x388",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_163",
+                    "address_offset": "0x38c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_164",
+                    "address_offset": "0x390",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_165",
+                    "address_offset": "0x394",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_166",
+                    "address_offset": "0x398",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_167",
+                    "address_offset": "0x39c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_168",
+                    "address_offset": "0x3a0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_169",
+                    "address_offset": "0x3a4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_170",
+                    "address_offset": "0x3a8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_171",
+                    "address_offset": "0x3ac",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_172",
+                    "address_offset": "0x3b0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_173",
+                    "address_offset": "0x3b4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_174",
+                    "address_offset": "0x3b8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_175",
+                    "address_offset": "0x3bc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_176",
+                    "address_offset": "0x3c0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_177",
+                    "address_offset": "0x3c4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_178",
+                    "address_offset": "0x3c8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_179",
+                    "address_offset": "0x3cc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_180",
+                    "address_offset": "0x3d0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_181",
+                    "address_offset": "0x3d4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_182",
+                    "address_offset": "0x3d8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_183",
+                    "address_offset": "0x3dc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_184",
+                    "address_offset": "0x3e0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_185",
+                    "address_offset": "0x3e4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_186",
+                    "address_offset": "0x3e8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_187",
+                    "address_offset": "0x3ec",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_188",
+                    "address_offset": "0x3f0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_189",
+                    "address_offset": "0x3f4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_190",
+                    "address_offset": "0x3f8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_191",
+                    "address_offset": "0x3fc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_192",
+                    "address_offset": "0x400",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_193",
+                    "address_offset": "0x404",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_194",
+                    "address_offset": "0x408",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_195",
+                    "address_offset": "0x40c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_196",
+                    "address_offset": "0x410",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_197",
+                    "address_offset": "0x414",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_198",
+                    "address_offset": "0x418",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_199",
+                    "address_offset": "0x41c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_200",
+                    "address_offset": "0x420",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_201",
+                    "address_offset": "0x424",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_202",
+                    "address_offset": "0x428",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_203",
+                    "address_offset": "0x42c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_204",
+                    "address_offset": "0x430",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_205",
+                    "address_offset": "0x434",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_206",
+                    "address_offset": "0x438",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_207",
+                    "address_offset": "0x43c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_208",
+                    "address_offset": "0x440",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_209",
+                    "address_offset": "0x444",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_210",
+                    "address_offset": "0x448",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_211",
+                    "address_offset": "0x44c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_212",
+                    "address_offset": "0x450",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_213",
+                    "address_offset": "0x454",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_214",
+                    "address_offset": "0x458",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_215",
+                    "address_offset": "0x45c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_216",
+                    "address_offset": "0x460",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_217",
+                    "address_offset": "0x464",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_218",
+                    "address_offset": "0x468",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_219",
+                    "address_offset": "0x46c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_220",
+                    "address_offset": "0x470",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_221",
+                    "address_offset": "0x474",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_222",
+                    "address_offset": "0x478",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_223",
+                    "address_offset": "0x47c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_224",
+                    "address_offset": "0x480",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_225",
+                    "address_offset": "0x484",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_226",
+                    "address_offset": "0x488",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_227",
+                    "address_offset": "0x48c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_228",
+                    "address_offset": "0x490",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_229",
+                    "address_offset": "0x494",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_230",
+                    "address_offset": "0x498",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_231",
+                    "address_offset": "0x49c",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_232",
+                    "address_offset": "0x4a0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_233",
+                    "address_offset": "0x4a4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_234",
+                    "address_offset": "0x4a8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_235",
+                    "address_offset": "0x4ac",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_236",
+                    "address_offset": "0x4b0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_237",
+                    "address_offset": "0x4b4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_238",
+                    "address_offset": "0x4b8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_239",
+                    "address_offset": "0x4bc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_240",
+                    "address_offset": "0x4c0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_241",
+                    "address_offset": "0x4c4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_242",
+                    "address_offset": "0x4c8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_243",
+                    "address_offset": "0x4cc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_244",
+                    "address_offset": "0x4d0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_245",
+                    "address_offset": "0x4d4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_246",
+                    "address_offset": "0x4d8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_247",
+                    "address_offset": "0x4dc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_248",
+                    "address_offset": "0x4e0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_249",
+                    "address_offset": "0x4e4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_250",
+                    "address_offset": "0x4e8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_251",
+                    "address_offset": "0x4ec",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_252",
+                    "address_offset": "0x4f0",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_253",
+                    "address_offset": "0x4f4",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_254",
+                    "address_offset": "0x4f8",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                },
+                {
+                    "type": "reg",
+                    "inst_name": "r1_255",
+                    "address_offset": "0x4fc",
+                    "size": 1024,
+                    "children": [
+                        {
+                            "type": "field",
+                            "inst_name": "dm",
+                            "lsb": 0,
+                            "msb": 31,
+                            "reset": 0,
+                            "sw_access": "rw",
+                            "hw_access": "r"
+                        }
+                    ]
+                }
+            ],
+            "memory_adress_end": "0x4fc"
+        }
+    ]
+}
